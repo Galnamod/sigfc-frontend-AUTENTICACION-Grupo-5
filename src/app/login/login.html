@@ -1,0 +1,50 @@
+<div class="full-page-bg">
+  <div class="login-card">
+    
+    <div class="side-form">
+      <div class="header-institucional">
+        <img src="img/Logo-uni.png" alt="Logo UNI" class="logo-top">
+        <div class="textos-logo">
+          <p class="uni-txt">UNIVERSIDAD NACIONAL DE INGENIERÍA</p>
+          <p class="sistema-txt">Sistema de Gestión de Proyectos de Investigación</p>
+        </div>
+      </div>
+
+      <h1 class="bienvenida">Bienvenido de vuelta</h1>
+
+      <div class="inputs-container">
+        <div class="field">
+          <label>Correo</label>
+          <input type="email" placeholder="Ingresa tu correo institucional">
+        </div>  
+
+        <div class="field">
+          <label>Contraseña</label>
+          <div class="password-wrapper">
+            <input type="password" placeholder="Ingresa tu contraseña">
+            <img src="img/ojo.png" alt="Ver" class="icono-ojo">
+          </div>
+        </div>
+
+        <div class="extras">
+          <label class="remember">
+            <input type="checkbox"> Recuérdarme
+          </label>
+          <a routerLink="/recuperar" class="link-olvido">Olvidé mi contraseña</a>
+        </div>
+      </div>
+
+      <button class="btn-iniciar" routerLink="/modales">
+        Iniciar sesión <span class="arrow">→</span>
+      </button>
+
+      <p class="footer-link">
+        ¿Todavía no tienes una cuenta? <a routerLink="/registro">Crea una ahora</a>
+      </p>
+    </div>
+
+    <div class="side-image">
+    </div>
+
+  </div>
+</div>

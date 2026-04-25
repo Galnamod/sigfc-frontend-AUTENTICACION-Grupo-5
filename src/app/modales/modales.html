@@ -1,0 +1,105 @@
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="menu-icon">☰</div>
+    <nav class="nav-menu">
+      <a routerLink="/admin" class="nav-item"><span>👤</span> Admin panel</a>
+      <a routerLink="/postulaciones" class="nav-item"><span>📋</span> Postulaciones</a>
+      <a routerLink="/validaciones" class="nav-item"><span>✅</span> Validaciones</a>
+      <a routerLink="/convenios" class="nav-item"><span>💼</span> Convenios</a>
+      <a routerLink="/seguimiento" class="nav-item"><span>📊</span> Seguimiento</a>
+      <a routerLink="/cierre" class="nav-item"><span>🔒</span> Cierre</a>
+      <a routerLink="/config" class="nav-item"><span>⚙️</span> Configuración</a>
+      <a routerLink="/login" class="nav-item salir"><span>⬅️</span> Salir</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="header-uni">
+      <div class="logo-area">
+        <img src="img/Logo-uni.png" alt="UNI">
+        <div class="titulos">
+          <p class="uni-name">UNIVERSIDAD NACIONAL DE INGENIERÍA</p>
+          <p class="sistema-name">Sistema de Gestión de Proyectos de Investigación</p>
+        </div>
+      </div>
+      <div class="user-profile-menu" (click)="isMenuOpen = !isMenuOpen">
+        
+        <div class="user-greeting">
+          <img src="img/foto.jpg" class="mini-foto">
+          <span>Hola {{ nombreUsuario }} ▼</span>
+        </div>
+        <div class="dropdown-menu" [class.show]="isMenuOpen">
+          <a routerLink="/perfil" class="dropdown-item">👤 Mi Perfil</a>
+          <a routerLink="/configuracion" class="dropdown-item">⚙️ Configuración</a>
+          
+          <div class="dropdown-divider"></div> <a routerLink="/login" class="dropdown-item text-danger">⬅️ Cerrar Sesión</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout-grid">
+      <section class="perfil-section">
+        <div class="foto-perfil-grande">
+          <img src="img/foto.jpg" alt="Admin">
+          <span class="edit-icon">✎</span>
+        </div>
+        <p class="rol-text">{{ rol }}</p>
+        
+        <div class="info-admin">         
+          <h3>Información administrativa</h3>
+          <label>Cargo</label>
+          <p>{{ cargo }}</p>
+          
+          <div class="contacto-header">
+            <h3>Contacto</h3>
+            <a href="#">Edit</a>
+          </div>
+
+          <label>Celular</label>
+          <p>987654321</p>
+
+          <label>E-mail</label>
+          <p>cjanjachit@uni.edu.pe</p>
+        </div>
+      </section>
+
+      <section class="dashboard-body">
+        <h1>Hola, {{ cargo }}!</h1>
+
+        <div class="stats-grid">
+          <div class="stat-card red">
+            <span class="num">5</span> <span class="lab">Alertas</span>
+          </div>
+          <div class="stat-card">
+            <span class="num">10</span> <span class="lab">Postulaciones nuevas</span>
+          </div>
+          <div class="stat-card">
+            <span class="num">5</span> <span class="lab">Evaluaciones pendientes</span>
+          </div>
+          <div class="stat-card">
+            <span class="num">3</span> <span class="lab">Convenios firmados</span>
+          </div>
+        </div>
+
+        <div class="accesos-header">Accesos Rápidos</div>
+          <div class="action-buttons-row">
+            <button class="btn-acceso" routerLink="/postulacion">
+              <span class="btn-emoji">📝</span> Nueva Postulación
+            </button>
+
+            <button class="btn-acceso" routerLink="/seguimiento">
+              <span class="btn-emoji">🔍</span> Seguimiento SIAF
+            </button>
+
+            <button class="btn-acceso" routerLink="/reportes">
+              <span class="btn-emoji">📊</span> Generar Reportes
+            </button>
+
+            <button class="btn-acceso" routerLink="/cronograma">
+              <span class="btn-emoji">📅</span> Ver Cronograma
+            </button>
+          </div>
+      </section>
+    </div>
+  </main>
+</div>

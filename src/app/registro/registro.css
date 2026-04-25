@@ -1,0 +1,86 @@
+.registro-full-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #741B15; /* Granate UNI */
+  padding: 20px;
+}
+
+.registro-card-split {
+  display: flex;
+  width: 1100px;
+  background-color: #F8F7F2;
+  border-radius: 15px;
+  overflow: hidden; /* Esto recorta la imagen en las esquinas derechas */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* Lado del Formulario (Ahora a la izquierda) */
+.side-form-content {
+  flex: 1.2;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Lado de la Imagen (Ahora a la derecha) */
+.side-image {
+  flex: 1;
+  background-image: url('/img/Frame 51.png'); /* O la foto que prefieras */
+  background-position: center;
+  border-left: px solid rgba(0,0,0,0.1); /* Una línea sutil para separar */
+}
+
+/* Estilos de la Cabecera */
+.header-uni { display: flex; align-items: center; gap: 15px; margin-bottom: 10px; }
+.logo-uni { width: 50px; }
+.institucion { color: #741B15; font-weight: bold; font-size: 11px; margin: 0; }
+.sistema { color: #125574; font-weight: bold; font-size: 15px; margin: 0; line-height: 1.2; }
+
+.titulo-registro { color: #125574; font-size: 26px; margin-bottom: 20px; 
+  margin-top: 20px;    /* Espacio con los inputs */ }
+
+/* El Grid para los 8 campos */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #741B15;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botón de Acción */
+.btn-crear {
+  width: 100%;
+  padding: 14px;
+  background-color: #741B15;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+
+.btn-crear:hover { background-color: #5a1410; }
+
+.login-link { text-align: center; font-size: 14px; margin-top: auto; }
+.login-link a { color: #125574; font-weight: bold; text-decoration: none; }
+

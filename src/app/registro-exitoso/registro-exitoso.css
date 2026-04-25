@@ -1,0 +1,59 @@
+.container-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f6f5f3;
+}
+
+.tarjeta-blanca {
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  text-align: center; /* Centramos todo el contenido */
+}
+
+.icono-exito {
+  width: 80px;
+  height: 80px;
+  background-color: #d4edda; /* Verde claro de fondo */
+  color: #28a745; /* Verde éxito */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.titulo-exito {
+  color: #125574;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.mensaje {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.btn-rojo {
+  width: 100%;
+  padding: 15px;
+  background-color: #741B15;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-rojo:hover {
+  background-color: #5a1410;
+}

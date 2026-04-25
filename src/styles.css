@@ -1,0 +1,35 @@
+/* Reseteo Global de Ingeniería */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Evita que los elementos se inflen */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #741B15; /* Fondo granate UNI de seguridad */
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden; /* Elimina barras de scroll indeseadas */
+}
+
+/* Forzar a los componentes de Angular a ocupar toda la pantalla */
+app-root, app-login, app-registro, app-modales {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.form-side {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  /* Añade esto para separar TODO un poco más */
+  gap: 10px; 
+}
+
+.image-side {
+  border: 2px solid red;
+}   

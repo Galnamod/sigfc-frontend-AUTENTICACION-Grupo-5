@@ -1,0 +1,141 @@
+/* Contenedor que ocupa toda la pantalla con el fondo granate */
+.full-page-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #741B15; /* Color institucional UNI */
+  padding: 20px;
+}
+
+/* La tarjeta blanca dividida */
+.login-card {
+  display: flex;
+  width: 1000px;
+  height: 650px;
+  background-color: #F8F7F2; /* Blanco roto de la imagen */
+  align-items: stretch;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Sección del formulario (50%) */
+.side-form {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sección de la imagen (50%) */
+.side-image {
+  flex: 40px;
+  background-image: url('/img/Frame 51.png'); /* Asegúrate de que la foto esté en public/img */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilos de los textos y elementos */
+.header-institucional {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  margin-top: -20px;    /* Espacio con los inputs */
+  margin-bottom: 40px;
+}
+
+.logo-top { width: 50px; }
+.uni-txt { color: #741B15; font-weight: bold; font-size: 12px; margin: 0; }
+.sistema-txt { color: #125574; font-weight: bold; font-size: 16px; margin: 0; }
+
+.bienvenida {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800; /* Extra Bold */
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #125574;
+  letter-spacing: -1px;
+  
+}
+
+.field { margin-bottom: 20px; }
+.field label { display: block; margin-bottom: 8px; font-weight: 500; }
+.field input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #741B15;
+  background: white;
+  box-sizing: border-box;
+}
+
+.extras {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.btn-iniciar {
+  background-color: #741B15;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;    /* Espacio con los inputs */
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  text-align: center;
+  margin-top: auto;
+  font-size: 13px;
+}
+
+.footer-link a { font-weight: bold; color: black; text-decoration: none; }
+
+/* El contenedor de la barra y el ojo */
+.password-wrapper {
+  position: relative; /* Esto es vital */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo del input */
+.input-pass {
+  width: 100%;
+  padding: 12px;
+  padding-right: 45px; /* Dejamos espacio a la derecha para que el texto no tape al ojo */
+  border: 1px solid #741B15;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Posicionando tu imagen 'ojo' dentro */
+.icono-ojo {
+  position: absolute;
+  right: 15px; /* Distancia desde el borde derecho */
+  width: 20px;  /* Ajusta el tamaño según tu imagen */
+  height: auto;
+  cursor: pointer;
+  opacity: 0.6; /* Un toque de transparencia para que se vea profesional */
+  transition: opacity 0.3s;
+}
+
+.icono-ojo:hover {
+  opacity: 1; /* Se ilumina al pasar el mouse */
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px;
+  color: #333;
+}

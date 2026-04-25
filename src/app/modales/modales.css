@@ -1,0 +1,320 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #f6f5f3;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background-color: #741B15;
+  color: white;
+  padding: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.nav-item:hover { opacity: 1; background: rgba(255,255,255,0.1); }
+
+/* CONTENIDO */
+.main-content { flex: 1; overflow-y: auto; }
+
+  .header-uni {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: white;
+    border-bottom: 3px solid #741B15;
+  }
+
+.logo-area { display: flex; align-items: center; gap: 15px; }
+.logo-area img { height: 50px; }
+.uni-name { color: #741B15; font-weight: bold; margin: 0; font-size: 14px; }
+.sistema-name { color: #125574; font-weight: bold; margin: 0; }
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding: 30px;
+  gap: 30px;
+}
+
+/* SECCION PERFIL */
+.perfil-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.foto-perfil-grande {
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+}
+
+
+.foto-perfil-grande img {
+  width: 90%;
+  border-radius: 50%;
+  border: 4px solid #f6f5f3;
+}
+
+
+/* La línea superior que pusiste */
+.info-admin { 
+  text-align: left;
+  margin-top: 10px; 
+  border-top: 2px solid #741B15; 
+  padding-top: 15px; /* Un poco de espacio para que el texto no choque con la línea roja */
+}
+
+/* Los títulos principales (Información y Contacto) */
+.info-admin h3 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Los textos grises pequeñitos */
+.info-admin label {
+  font-size: 13px;
+  color: #888;
+  display: block;
+  margin-bottom: 2px; /* Pegado al texto de abajo */
+}
+
+/* Los datos en negrita (Presidente, el número, el correo) */
+.info-admin p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px; /* ESTA ES LA MAGIA: El espacio que separa un dato del otro */
+}
+
+/* El contenedor que pone "Contacto" y "Edit" en la misma línea */
+.contacto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio antes del celular */
+}
+
+/* Le quitamos el margen al h3 de contacto para que se alinee bien con Edit */
+.contacto-header h3 {
+  margin: 0;
+}
+
+/* El enlace morado de Edit */
+.contacto-header a {
+  font-size: 14px;
+  color: #6200ea; /* Morado como en tu foto */
+  text-decoration: underline;
+}
+
+.info-admin label { color: #888; font-size: 12px; }
+.info-admin p { color: #333; margin: 5px 0 15px; font-weight: bold; }
+
+/* SECCION DERECHA */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.stat-card.red .num { color: #d9534f; }
+.stat-card .num { font-size: 32px; font-weight: bold; display: block; }
+.stat-card .lab { color: #888; font-size: 14px; }
+
+.accesos-header {
+  background: #741B15;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #741B15;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+  font-size: 24px;
+}
+
+
+/* El contenedor que cuadra los botones */
+.action-buttons-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+/* Un solo estilo para todos los botones */
+.btn-acceso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  background: white;
+  color: #125574;
+  border: 2px solid #e0e0e0; /* Borde neutral para todos */
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+/* Todos se pintan de granate al pasar el mouse */
+.btn-acceso:hover {
+  background: #741B15;
+  color: white;
+  border-color: #741B15;
+}
+
+.btn-emoji {
+  font-size: 18px;
+}
+
+.dashboard-body h1 { 
+  color: #101517; 
+  font-size: 36px; /* Un poquito más grande para darle peso */
+  margin-top: 10px; /* Le da un respiro por la parte de arriba */
+  margin-bottom: 35px; /* ESTA ES LA CLAVE: Lo separa de las tarjetas numéricas */
+}
+
+.dashboard-body {
+  padding-top: 15px;
+}
+
+/* =========================================
+   MENÚ DESPLEGABLE DEL USUARIO
+   ========================================= */
+.user-profile-menu {
+  position: relative; /* Clave: Mantiene al menú hijo atado a este espacio */
+  display: inline-block;
+}
+
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.mini-foto {
+  width: 50px;   /* Ajusta este valor para el tamaño deseado */
+  height: 50px;  /* Debe ser igual al ancho para mantener el círculo */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #741B15; /* Un borde más delgado se ve más elegante */
+}
+
+.user-greeting:hover {
+  background-color: #af8282; /* Efecto hover al pasar el mouse por el nombre */
+}
+
+/* El cuadro del menú oculto */
+.dropdown-menu {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  top: 115%; /* Se ubica justo debajo del saludo */
+  right: 0; /* Alineado a la derecha para que no se salga de la pantalla */
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Sombra elegante */
+  border-radius: 8px;
+  border: 1px solid #eee;
+  z-index: 1000; /* Lo pone por encima de TODO el sistema */
+  overflow: hidden;
+}
+
+/* Angular activa esta clase para mostrarlo */
+.dropdown-menu.show {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Las opciones dentro del menú */
+.dropdown-item {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dropdown-item:hover {
+  background-color: #f6f5f3;
+  color: #741B15; /* Se pinta granate al pasar el mouse */
+  padding-left: 25px; /* Pequeño efecto de movimiento */
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 0;
+}
+
+.text-danger {
+  color: #ff4d4d;
+}
+
+.text-danger:hover {
+  background-color: #fff0f0;
+  color: #cc0000;
+}
