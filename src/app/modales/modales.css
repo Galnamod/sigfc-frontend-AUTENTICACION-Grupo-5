@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   font-family: sans-serif;
-  background-color: #f6f5f3;
+  background-color: #F8F7F2;
 }
 
 /* SIDEBAR */
@@ -247,17 +247,17 @@
   font-weight: bold;
   color: #333;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 8px;
   transition: background-color 0.3s;
 }
 
 .mini-foto {
-  width: 50px;   /* Ajusta este valor para el tamaño deseado */
-  height: 50px;  /* Debe ser igual al ancho para mantener el círculo */
-  border-radius: 50%;
+  width: 40px;   /* Ajusta este valor para el tamaño deseado */
+  height: 40px;  /* Debe ser igual al ancho para mantener el círculo */
+  border-radius: 60%;
   object-fit: cover;
-  border: 1.5px solid #741B15; /* Un borde más delgado se ve más elegante */
+  border: 2px solid #741B15; /* Un borde más delgado se ve más elegante */
 }
 
 .user-greeting:hover {
@@ -268,10 +268,11 @@
 .dropdown-menu {
   display: none; /* Oculto por defecto */
   position: absolute;
-  top: 115%; /* Se ubica justo debajo del saludo */
+  top: 100%;
+  width: 100%; /* Se ubica justo debajo del saludo */
   right: 0; /* Alineado a la derecha para que no se salga de la pantalla */
   background-color: white;
-  min-width: 200px;
+  min-width: 180px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Sombra elegante */
   border-radius: 8px;
   border: 1px solid #eee;
