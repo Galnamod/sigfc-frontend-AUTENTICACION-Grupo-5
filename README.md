@@ -12,7 +12,7 @@ Este repositorio contiene el prototipo de interfaz (Frontend) para el sistema de
 * Aymachoque Aymachoque Luis Jairo - 20191144G
 * Lock Brañez Peter Alexander - 20160015K
 
----
+-----
 
 ### 1. 👥 Roles del equipo
 * **Product Owner:** Prof. Carlos Janjachi
@@ -56,11 +56,10 @@ Se ha integrado la investigación técnica y el soporte de diseño para fortalec
     * El repositorio en GitHub está actualizado.
 
 ### 6. Sprint Execution
-El equipo realizó Dailies para sincronizar la maquetación. Se incluyó una fase de investigación previa liderada por Peter Lock sobre el flujo de trabajo en Git y los lineamientos gráficos de la UNI para asegurar la consistencia del prototipo.
+El equipo realizó Dailies para sincronizar la maquetación. Se incluyó una fase de investigación previa liderada por Peter sobre el flujo de trabajo en Git y los lineamientos gráficos de la UNI para asegurar la consistencia del prototipo.
 
 ### 7. Sprint Review (Revisión)
 * **Demostración:** Exhibición de la navegación fluida entre Login, Registro y el Dashboard.
-* **Feedback:** El profesor validó la estructura visual y la correcta aplicación de los lineamientos de diseño.
 
 ### 8. Sprint Retrospective (Retrospectiva)
 * **Aciertos:** La investigación sobre Git ayudó a evitar conflictos en el repositorio. La distribución de tareas permitió que los miembros con menos carga apoyaran en el diseño de pantallas críticas.
