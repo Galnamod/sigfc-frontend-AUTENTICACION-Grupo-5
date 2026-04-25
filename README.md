@@ -67,3 +67,6 @@ El equipo realizó Dailies para sincronizar la maquetación. Se incluyó una fas
 
 ### 9. Cierre del Sprint
 **Incremento Entregado:** Conjunto de vistas estáticas y navegables (Frontend) con base documental en investigación técnica y diseño institucional.
+
+ ### LINK DE FIGMA  
+ https://www.figma.com/design/9Jv7Otpg1b11GEERTzXEdv/SI806U?node-id=0-1&p=f
